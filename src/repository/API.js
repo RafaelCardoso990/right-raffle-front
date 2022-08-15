@@ -1,7 +1,7 @@
 import axios from "axios"
 
 
-const BASE_URL = "http://localhost:4000"
+const BASE_URL = "https://right-raffle.herokuapp.com"
 
 function createUser(body) {    
     const promise = axios.post(`${BASE_URL}/sign-up`, body)
