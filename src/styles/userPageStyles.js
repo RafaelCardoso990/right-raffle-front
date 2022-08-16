@@ -5,6 +5,7 @@ const Section = styled.section`
     justify-content: center;
     align-items: center;
     flex-direction: column;
+ 
 `
 const Div = styled.div` 
     width: 60vw;
@@ -35,8 +36,25 @@ const Div = styled.div`
         font-family: 'Amatic SC', cursive;
         font-size: 60px;   
     }
+
+    @media (max-width: 1000px) {       
+        
+        h1, p{
+            font-size: 30px;  
+                     
+        }   
+    }
     
 `
-const userPageStyles = {Section, Div}
+const Main = styled.main`
+    @media (max-width: 1000px) {       
+        
+        p{
+            font-size: 30px;  
+                     
+        }   
+    }
+`
+const userPageStyles = {Section, Div, Main}
 
 export default userPageStyles

@@ -10,6 +10,14 @@ const Main = styled.main`
         font-family: 'Amatic SC', cursive;
         font-size: 80px;
     }
+
+    @media (max-width: 1000px) {       
+        
+        p{
+            font-size: 30px;  
+                     
+        }   
+    }
 `
 
 const Raffles = styled.section`
@@ -28,17 +36,56 @@ const Raffles = styled.section`
 
     background-color: #FFFFFF;
 
+    @media (max-width: 1000px) {
+        width: 60vw;
+        
+        h1{
+            font-size: 30px;  
+            margin-top: 100px;          
+        }   
+    }
+
+
     div{
         display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
         width: 600px;
 
         .button{
             margin-top: 20px;
         }
         
-        @media (max-width: 768px) {
+        @media (max-width: 1000px) {
         width: 300px;
+        }
+    }
+
+    div > .button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 600px;
+
+        .button{
+            margin-top: 20px;
+            
+        }
+        
+        @media (max-width: 1000px) {
+        width: 30vw;
+        }
+    }
+
+    div > .standard-basic{     
+
+        
+        @media (max-width: 1000px) {
+            width: 40vw;
+            margin-top: 100px;
+            
         }
     }
 `

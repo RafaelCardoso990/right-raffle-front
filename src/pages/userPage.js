@@ -6,7 +6,7 @@ import Header from "../components/header"
 
 import userPageStyles from "../styles/userPageStyles"
 
-const {Section, Div} = userPageStyles
+const {Section, Div, Main} = userPageStyles
 
 function UserPage(){
 
@@ -27,14 +27,14 @@ function UserPage(){
     },[])
 
     return (
-        <>
+        <Main>
             <Header/>
             <Section>
                {raffles.map((raffle) =>{
                    const {numbers} = raffle
                    const {name} = raffle.raffles
                    return (
-                       <Div>
+                       <Div key={numbers}>
                            <h1>{name}</h1>                           
                            <p>{`${numbers}`}</p>
                        </Div>
@@ -42,7 +42,7 @@ function UserPage(){
                })}
 
             </Section>
-        </> 
+        </Main> 
     )
 }
 

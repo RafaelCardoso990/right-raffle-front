@@ -74,17 +74,7 @@ function Raffle(){
         });        
       }
 
-    function Buy(){
-        
-        if(body.numbers.length <= 0){
-            Swal.fire({
-                title: 'Error!',
-                text: `choose the number of raffles`,
-                icon: 'error',
-                confirmButtonText: 'Cool'
-            })         
-            navigate("/home")
-        }
+    function Buy(){               
 
         const promise = API.buyNumbersRaffles(body, config, raffle.id)
         promise.then(response => {
@@ -113,7 +103,8 @@ function Raffle(){
                 <h1>{raffle.name}</h1>
                 <form onSubmit={e => submitForm(e)}>
                     <div>
-                        <TextField id="standard-basic1" label="How many numbers do you want to buy ?" variant="standard" type="number" placeholder="amount"/>                                
+                        <TextField className='standard-basic' label="How many numbers do you want to buy ?" variant="standard" type="number"
+                        placeholder="amount"/>                                
                         <Button className="button" variant="outlined" type="submit" onClick={() => setVisible(false)}>Get numbers</Button>
                     </div>
                 </form>

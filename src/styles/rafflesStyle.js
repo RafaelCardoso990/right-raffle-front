@@ -39,12 +39,12 @@ const Raffles = styled.div`
     } 
     
     img{
-        width: 300px;
+        width: 20vw;
         border-radius: 5px;
         box-shadow: 0px 0px 31px -11px #000000;
         
         @media (max-width: 768px) {
-            width: 150px;
+            width: 35vw;
         }
     }
 `

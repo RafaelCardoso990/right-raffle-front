@@ -3,7 +3,7 @@ import userFactory from "./factory/userFactory"
 
 describe("Sign-up test", () =>{
     it("Should create a user", async () => {
-        cy.resetDB()
+        // cy.resetDB()
         cy.visit(userFactory.URL_FRONT)
         cy.visit(`${userFactory.URL_FRONT}/sign-up`)
 
