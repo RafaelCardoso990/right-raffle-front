@@ -79,8 +79,7 @@ const Raffles = styled.section`
         }
     }
 
-    div > .standard-basic{     
-
+    div > .standard-basic{   
         
         @media (max-width: 1000px) {
             width: 40vw;
@@ -104,13 +103,19 @@ const NumberRaffles = styled.section`
     background-color: #FFFFFF;
 
     div{      
-        width: 200px;
-        height: 150px;
+        width: 10vw;
+        height: 15vh;
         display: flex;       
         overflow-y: auto;
         
         align-items: center;
         flex-direction: column;
+
+        @media (max-width: 1000px) {
+            margin-top: 90px;
+            height: 10vh;
+            
+        }
     }
 
     div > p{

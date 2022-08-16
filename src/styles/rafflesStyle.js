@@ -12,7 +12,7 @@ const Raffles = styled.div`
     justify-content: space-around;
     align-items: center;    
 
-    @media (max-width: 768px) {
+    @media (max-width: 990px) {
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -24,7 +24,7 @@ const Raffles = styled.div`
         font-family: 'Bebas Neue', cursive;       
         text-decoration: none;
 
-        @media (max-width: 768px) {
+        @media (max-width: 990px) {
             font-size: 20px;
         }
     }
@@ -39,12 +39,12 @@ const Raffles = styled.div`
     } 
     
     img{
-        width: 20vw;
+        width: 15vw;
         border-radius: 5px;
         box-shadow: 0px 0px 31px -11px #000000;
         
-        @media (max-width: 768px) {
-            width: 35vw;
+        @media (max-width: 990px) {
+            width: 25vw;
         }
     }
 `
