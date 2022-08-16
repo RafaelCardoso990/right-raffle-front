@@ -44,7 +44,7 @@ const Raffles = styled.section`
             margin-top: 100px;          
         }   
     }
-
+    
 
     div{
         display: flex;
@@ -58,7 +58,7 @@ const Raffles = styled.section`
         }
         
         @media (max-width: 1000px) {
-        width: 300px;
+        width: 30vw;
         }
     }
 
@@ -75,16 +75,14 @@ const Raffles = styled.section`
         }
         
         @media (max-width: 1000px) {
-        width: 30vw;
+            width: 30vw;
         }
     }
 
     div > .standard-basic{   
         
-        @media (max-width: 1000px) {
-            width: 40vw;
-            margin-top: 100px;
-            
+        @media (max-width: 1000px) {            
+            margin-top: 60px;                        
         }
     }
 `
