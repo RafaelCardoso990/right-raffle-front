@@ -17,7 +17,7 @@ function Header(){
                 <Img src={imageLogo}/>
             </div>
                 <Link to={"/home"} className="link"><MyRaffles>Home</MyRaffles></Link>
-                <Link to={`/user/${data.userId}`} className="link"><MyRaffles>My Raffles</MyRaffles></Link>
+                <Link to={`/user/${data.userId}`} className="link2"><MyRaffles>My Raffles</MyRaffles></Link>
         </Headers>
     )
 }

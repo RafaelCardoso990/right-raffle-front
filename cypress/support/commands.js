@@ -1,7 +1,18 @@
 import userFactory from "../e2e/factory/userFactory"
 
 Cypress.Commands.add('resetDB', () => {
-  cy.request('DELETE', `${userFactory.URL_BACK}/reset`).then(() => { })
+  console.log("fui chamado")
+  cy.request('DELETE', `${userFactory.URL_BACK}/reset`).then(() => { })  
+})
+
+Cypress.Commands.add('seedDB', () => {
+  cy.request('DELETE', `${userFactory.URL_BACK}/reset`).then(() => {
+    cy.request('POST', `${userFactory.URL_BACK}/seed`).then(() => { })
+  })
+})
+
+Cypress.Commands.add('seedDBWithoutReset', () => {
+  cy.request('POST', `${userFactory.URL_BACK}/seed`).then(() => { })
 })
 
 

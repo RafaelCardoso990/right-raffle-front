@@ -4,7 +4,7 @@ import userFactory from "./factory/userFactory"
 describe("Sign-up and sign-in test", () =>{  
 
     it("Should log in adn visit the page home", async() => {
-
+        
         cy.visit(`${userFactory.URL_FRONT}/`)
 
         const user = userFactory.createUser()
@@ -31,8 +31,8 @@ describe("Sign-up and sign-in test", () =>{
         cy.get('button[type=buy]').click()
         cy.wait('@buyNumbers')
 
-        cy.get('.swal2-confirm.swal2-styled').click()        
-    })
-
-    
+        cy.get('.swal2-confirm.swal2-styled').click()
+        
+        cy.get('.link2').click()
+    })    
 })

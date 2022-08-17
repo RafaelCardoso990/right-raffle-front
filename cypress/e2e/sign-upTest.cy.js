@@ -3,7 +3,8 @@ import userFactory from "./factory/userFactory"
 
 describe("Sign-up test", () =>{
     it("Should create a user", async () => {
-        // cy.resetDB()
+        cy.seedDB()
+        
         cy.visit(userFactory.URL_FRONT)
         cy.visit(`${userFactory.URL_FRONT}/sign-up`)
 
@@ -19,4 +20,9 @@ describe("Sign-up test", () =>{
 
         cy.url().should('equal', `${userFactory.URL_FRONT}/`)
     })    
+})
+
+
+beforeEach(() => {
+    cy.resetDB()
 })

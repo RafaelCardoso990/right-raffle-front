@@ -18,7 +18,7 @@ const Headers = styled.header`
         align-items: center;        
     }   
 
-    .link{
+    .link, .link2{
         text-decoration: none;
     }
     
